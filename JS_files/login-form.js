@@ -36,10 +36,10 @@ $(document).ready(function () {
             return false;
         }
         else { true; }
-        if (name.length > 20) {
-            $(".hide").text("More than 20 char. is not allowed");
-            return false;
-        }
+        // if (name.length > 20) {
+        //     $(".hide").text("More than 20 char. is not allowed");
+        //     return false;
+        // }
         else { $(".hide").text(""); }
         //username for login
         //pass for login
