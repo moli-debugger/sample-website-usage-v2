@@ -24,7 +24,7 @@ $(document).ready(function () {
     var usageCollector = new churn360.UsageCollector();
     usageCollector.initialize("ZXlKMklqb3hMakFzSW10bGVTSTZJbVZqWlRnNVpXWmhOemN3TURRd1ltSmlOakUyTWpVeU1HSmtZVEkxWldGa0lpd2lhV1FpT2lJd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNQ0lzSW5OcElqb2lkR1ZLWTJsbGRIZElhV0ZIYldseWFFWndNVzFhV0VOeGIxVTNWRVpYWVc1amRtZHRVM2hWYkdkVVl6MGlmUT09", empmail, empmail);
     if (localStorage.getItem("Churn360-usage-userInfo")) {
-        usageCollector.identify(traits, uuidv4());
+        usageCollector.identify(traits, empmail);
         usageCollector.listener();
     }
 })
