@@ -6,8 +6,6 @@ function uuidv4() {
 
 $(document).ready(function () {
     var empmail = localStorage.getItem("userId");
-    }
-
     var churn360Notifier = new churn360notifier.Churn360Notifier();
     churn360Notifier.initialize(
       "15BD2360-0B69-46C5-9271-F7A3B8814CAE",
