@@ -21,11 +21,11 @@ $(document).ready(function () {
         }
     }
 
-    var usageCollector = new churn360.UsageCollector();
-    usageCollector.initialize("ZXlKMklqb3hMakFzSW10bGVTSTZJbVV5WmpNek1ESTROVGRoTWpRd09UZGlNR1U1WTJVeFl6VXdNRGd6T1RjMUlpd2lhV1FpT2lJME1UWmxNRGN4TkdVeE16STBNalE0T1daalpESmpZakprWmpjd01tVTBOQ0lzSW5OcElqb2lUVTF3ZUVacVRHSXpSVFZ6YUd0eVkwSmlhSEZOYmtKWGVHTlNORUZLUVZScFZFbFFLMGhSYmpCNlJUMGlmUT09", empmail, empmail);
+   var usageCollector = new churn360.UsageCollector();
+    usageCollector.initialize("ZXlKMklqb3hMakFzSW10bGVTSTZJbVptTWpReE9ESmpNVEkxWmpRM04yWTVaakZqTm1FMVpXVTFaREU1WWpneUlpd2lhV1FpT2lKa1l6azRPVEkyTWpZMU9EQTBOREZqWVRnNU1XRmpaV0poTldZd1pESmhZaUlzSW5OcElqb2lURVJZVmpJM0wwVjRkbWRwTTNkbFNXVk1XVmRsY0c4eldGbEZLMlF6UkZOSFZUZ3JjV281TWpaMFdUMGlmUT09", empmail, empmail,traits);
     if (localStorage.getItem("Churn360-usage-userInfo")) {
-        usageCollector.identify(traits, empmail);
-        usageCollector.listener();
+        usageCollector.identify(empmail,traits);
+        usageCollector.startEventListener();
     }
 })
 
