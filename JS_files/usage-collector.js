@@ -24,6 +24,6 @@ $(document).ready(async function () {
    var usageCollector = new churn360.UsageCollector();
     await usageCollector.initialize("ZXlKMklqb3hMakFzSW10bGVTSTZJalJqTW1WbU0yWXpNell3WmpSa1pEQmlOVEE1T1RKaU16Tm1OakF6TTJZeElpd2lhV1FpT2lJd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNREF3TURBd01EQXdNQ0lzSW5OcElqb2llSGxHWVVoVVJubHZTeTlsVDBSamVGUjVaVWxCUWxNd0sybDJORGR5VURjck1VWnVVWFJhVkRKQk1EMGlmUT09", empmail, empmail);
     await usageCollector.identify(empmail,traits);
-    await usageCollector.startEventListener();
+    await usageCollector.listener();
 })
 
