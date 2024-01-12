@@ -8,10 +8,10 @@ $(document).ready(async function () {
 
     var empmail = localStorage.getItem("userId")
 
-    var fullName = empmail.split('@')[0].split('.');
+    var fullName = empmail.split('@')[0];
 
-    var firstName = fullName[0];
-    var lastName = fullName[fullName.length - 1]
+    var firstName = fullName;
+    var lastName = fullName;
 
     var traits = {
         firstName: firstName,
