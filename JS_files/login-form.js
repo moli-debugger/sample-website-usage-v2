@@ -23,6 +23,7 @@ $(document).ready(function () {
         $(".form").css("height", "135vh")
     })
     $(".login-button").click(function () {
+        var apiKey = $(".input-4").val();
         var name = $(".input-1").val();
         var identifier = $(".input-3").val();
         var check = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
@@ -56,6 +57,7 @@ $(document).ready(function () {
         else { $(".hide-1").text(""); }
         localStorage.setItem("userId", name);
         localStorage.setItem("identifier",identifier)
+        localStorage.setItem('apiKey', apiKey);
     })
     //pass for login
     //for sign-up btn
