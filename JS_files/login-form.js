@@ -24,7 +24,12 @@ $(document).ready(function () {
     })
     $(".login-button").click(function () {
         var name = $(".input-1").val();
+        var identifier = $(".input-3").val();
         var check = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+        if (identifier == "") {
+            $(".hide").text("Enter your valid email Id");
+            return false;
+        }
         //username for login
         if (name == "") {
             $(".hide").text("Enter your valid email Id");
@@ -50,6 +55,7 @@ $(document).ready(function () {
         }
         else { $(".hide-1").text(""); }
         localStorage.setItem("userId", name);
+        localStorage.setItem("identifier",identifier)
     })
     //pass for login
     //for sign-up btn
