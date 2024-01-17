@@ -28,6 +28,6 @@ $(document).ready(async function () {
    var usageCollector = new churn360.UsageCollector();
     await usageCollector.initialize(localStorage.getItem('apiKey'), localStorage.getItem("identifier"), empmail);
     await usageCollector.identify(traits, empmail);
-    await usageCollector.startEventListener();
+    await usageCollector.listener();
 })
 
