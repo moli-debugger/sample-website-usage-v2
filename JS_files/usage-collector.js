@@ -8,7 +8,7 @@ $(document).ready(async function () {
 
     var empmail = localStorage.getItem("userId")
 
-    
+
 
     var fullName = empmail.split('@')[0];
 
@@ -25,15 +25,15 @@ $(document).ready(async function () {
         }
     }
 
-   var usageCollector = new churn360.UsageCollector();
+    var usageCollector = new churn360.UsageCollector();
     await usageCollector.initialize(localStorage.getItem('apiKey'), localStorage.getItem("identifier"), empmail);
-    await usageCollector.identify(traits,empmail);
+    await usageCollector.identify(traits, empmail);
     await usageCollector.page();
-    await usageCollector.page({'env':'sample'})
+    await usageCollector.page({ 'env': 'sample' })
     // await usageCollector.track('sample 101', 'test from sample')
     // await usageCollector.track('sample 101', 'test from sample', {'env':'sample'});
-    // await usageCollector.startEventListener(); //for v2
-    await usageCollector.listener(); //for v1
+    await usageCollector.startEventListener(); //for v2
+    //await usageCollector.listener(); //for v1
 
 })
 
