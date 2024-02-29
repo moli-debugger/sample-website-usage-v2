@@ -32,7 +32,7 @@ $(document).ready(async function () {
     // await usageCollector.track('sample 101', 'test from sample')
     // await usageCollector.track('sample 101', 'test from sample', {'env':'sample'});
     await usageCollector.startEventListener(); //for v2
-    await usageCollector.page("first page",{ 'env': 'sample' })
+    usageCollector.page("first-101 page",{ 'env': 'sample' })
     //await usageCollector.listener(); //for v1
 
 })
