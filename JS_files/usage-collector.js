@@ -29,10 +29,10 @@ $(document).ready(async function () {
     await usageCollector.initialize(localStorage.getItem('apiKey'), localStorage.getItem("identifier"), empmail);
     await usageCollector.identify(traits, empmail);
     await usageCollector.page();
-    await usageCollector.page("first page",{ 'env': 'sample' })
     // await usageCollector.track('sample 101', 'test from sample')
     // await usageCollector.track('sample 101', 'test from sample', {'env':'sample'});
     await usageCollector.startEventListener(); //for v2
+    usageCollector.page("first page",{ 'env': 'sample' })
     //await usageCollector.listener(); //for v1
 
 })
