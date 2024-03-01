@@ -33,6 +33,10 @@ $(document).ready(async function () {
     // await usageCollector.track('sample 101', 'test from sample', {'env':'sample'});
     await usageCollector.startEventListener(); //for v2
     usageCollector.page("first-101 page", null)
+    setTimeout(() => {
+        console.log('Code executed after 1 minute!');
+        usageCollector.page("page-102 page", null)
+    }, 60000); 
     //await usageCollector.listener(); //for v1
 
 })
