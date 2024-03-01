@@ -45,7 +45,7 @@ $(document).ready(async function () {
             console.log('search input')
             usageCollector.track('search input', 'search input')
         }
-        else if(element.target.id === 'open-content-one-hundred'){
+        else if(element.target.classList.contains('open-content-one-hundred')){
             console.log('poiuy')
             usageCollector.track('one hundered', 'one hundred')
         }
