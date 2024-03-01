@@ -39,5 +39,15 @@ $(document).ready(async function () {
     }, 60000); 
     //await usageCollector.listener(); //for v1
 
+    document.addEventListener('click', function(element){
+        if(element.target.classList.contains('search-box')){
+            console.log('search input')
+            usageCollector.track('search input', 'search input')
+        }
+        else if(element.target.id === 'open-content-one-hundred'){
+            console.log('poiuy')
+            usageCollector.track('one hundered', 'one hundred')
+        }
+    })
 })
 
