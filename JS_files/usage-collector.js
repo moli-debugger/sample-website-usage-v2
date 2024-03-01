@@ -40,6 +40,7 @@ $(document).ready(async function () {
     //await usageCollector.listener(); //for v1
 
     document.addEventListener('click', function(element){
+        console.log(element.target.id)
         if(element.target.classList.contains('search-box')){
             console.log('search input')
             usageCollector.track('search input', 'search input')
