@@ -51,15 +51,17 @@ $(document).ready(async function () {
         }
     })
 
-    analytics.group('UNIVAC Working Group', {
-        principles: ['Eckert', 'Mauchly'],
-        site: 'Eckert–Mauchly Computer Corporation',
-        statedGoals: 'Develop the first commercial computer',
-        industry: 'Technology'
-      });
-      analytics.page('Pricing', {
-        title: 'My Overridden Title',
-        path: '/pricing/view'
-      });
+    setTimeout(() => {
+        console.log('Code executed after 1 minute!');
+        analytics.identify('12091906-01011992', {
+            name: 'Grace Hopper',
+            email: 'grace@usnavy.gov'
+          }); 
+          analytics.page('Pricing', {
+            title: 'My Overridden Title',
+            path: '/pricing/view'
+          });   }, 60000); 
+
+
 })
 
