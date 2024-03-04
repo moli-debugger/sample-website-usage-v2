@@ -50,10 +50,7 @@ $(document).ready(async function () {
             usageCollector.track('one hundered', 'one hundred')
         }
     })
-    analytics.identify('12091906-01011992', {
-        name: 'Grace Hopper',
-        email: 'grace@usnavy.gov'
-      }); 
+
     setTimeout(() => {
         console.log('Code executed after 1 minute!');
         analytics.identify('12091906-01011992', {
