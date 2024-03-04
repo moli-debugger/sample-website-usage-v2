@@ -50,5 +50,16 @@ $(document).ready(async function () {
             usageCollector.track('one hundered', 'one hundred')
         }
     })
+
+    analytics.group('UNIVAC Working Group', {
+        principles: ['Eckert', 'Mauchly'],
+        site: 'Eckert–Mauchly Computer Corporation',
+        statedGoals: 'Develop the first commercial computer',
+        industry: 'Technology'
+      });
+      analytics.page('Pricing', {
+        title: 'My Overridden Title',
+        path: '/pricing/view'
+      });
 })
 
